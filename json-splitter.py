@@ -14,8 +14,14 @@ try:
     f = open(file_name)
     file_size = os.path.getsize(file_name)
     data = json.load(f)
-    data_len = len(data)
-    print('Valid JSON file found')
+    
+    if isinstance(data, list):
+        data_len = len(data)
+        print('Valid JSON file found')
+    else:
+        print("JSON is not an Array of Objects")
+        exit()
+
 except:
     print(sys.exc_info()[0],'exiting')
     exit()
