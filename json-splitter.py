@@ -1,8 +1,5 @@
 import os
-from os import path
 import json
-import sys
-from sys import getsizeof
 import math
 
 print('Welcome to the JSON Splitter')
@@ -23,14 +20,14 @@ try:
         exit()
 
 except:
-    print(sys.exc_info()[0],'exiting')
+    print('Error loading JSON file ... exiting')
     exit()
 
 # get numeric input
 try:
     mb_per_file = abs(float(input('Enter maximum file size (MB): ')))
 except:
-    print(sys.exc_info()[0],'exiting')
+    print('Error entering maximum file size ... exiting')
     exit()
 
 # check that file is larger than max size
