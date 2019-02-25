@@ -1,7 +1,12 @@
+import sys
 import os
 import json
 import math
 
+if sys.version_info[0] < 3:
+    print('This script requires Python 3 or higher')
+    exit()
+    
 print('Welcome to the JSON Splitter')
 print('First, enter the name of the file you want to split')
 
