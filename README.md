@@ -1,11 +1,13 @@
 # json-splitter
-A simple command line tool for splitting large JSON files into smaller files
+A simple command line tool for splitting large JSON files into smaller files. Python 3+ is required for this script to work.
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Support](#support)
+- [json-splitter](#json-splitter)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Support](#support)
 
 ## Installation
 This script requires Python to be installed on the local machine. Please visit [Python.org](https://www.python.org/) to install or type `python3 --version` to verify it is already installed.
